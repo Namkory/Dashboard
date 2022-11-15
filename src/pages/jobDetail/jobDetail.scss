@@ -1,0 +1,52 @@
+.jobDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    .wrapper {
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 20px;
+        background-color: #ebeff2;
+
+        h2 {
+            margin: 2px;
+            margin-right: 20px;
+        }
+    }
+
+    .tabsList {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .tabHeader {
+            border: 1px solid#ebeff2;
+            cursor: pointer;
+            margin-right: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            padding: 12px;
+            background-color: #ebeff2;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            &:focus {
+                background-color: #fff;
+            }
+
+            span {
+                height: 30px;
+            }
+        }
+        .active {
+            border: 1px solid white;
+            background-color: white;
+            border-bottom: none;
+        }
+    }
+}

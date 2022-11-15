@@ -1,0 +1,148 @@
+.wrappercmt {
+    padding: 20px 22px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .avatar {
+        .avatarimg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+
+    .cmt {
+        width: 100%;
+
+        .cmtinput {
+            width: 100%;
+            font-size: 16px;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 25px;
+            border-bottom: 1px solid black;
+            margin-bottom: 8px;
+        }
+
+        .cmtbtn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .icon {
+                font-size: 25px;
+                cursor: pointer;
+                border: 10px solid transparent;
+                border-radius: 25px;
+                background: transparent;
+
+                &:hover {
+                    border: 10px solid #d1cdcd;
+                    border-radius: 25px;
+                    background: #d1cdcd;
+                }
+            }
+
+            .cmtbtn-final {
+                width: 170px;
+                display: flex;
+                justify-content: space-between;
+                .cmtbtn-finall {
+                    border: 10px solid #d1cdcd;
+                    border-radius: 25px;
+                    background: #d1cdcd;
+
+                    &:hover {
+                        border: 10px solid gray;
+                        background: gray;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.usercmt {
+    display: flex;
+    padding: 0 20px;
+
+    .avatar {
+        .avatarimg {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+
+    .inforuser {
+        width: 100%;
+
+        .usercmt-name {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .usercmt-content {
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0 10px;
+        }
+        .usercmt-icon {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 20px;
+
+            .icon {
+                cursor: pointer;
+                border: 10px solid transparent;
+                border-radius: 25px;
+                background: transparent;
+
+                &:hover {
+                    border: 10px solid #d1cdcd;
+                    border-radius: 25px;
+                    background: #d1cdcd;
+                }
+            }
+
+            .usercmt-icon-res {
+                font-size: 14px;
+                cursor: pointer;
+                border: 10px solid transparent;
+                border-radius: 25px;
+                background: transparent;
+
+                &:hover {
+                    border: 10px solid #d1cdcd;
+                    border-radius: 25px;
+                    background: #d1cdcd;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .icondelete {
+        border: 10px solid #d1cdcd;
+        border-radius: 25px;
+        background: #d1cdcd;
+        width: 25px;
+        height: 20px;
+        font-size: 20px;
+        cursor: pointer;
+
+        &:hover{
+            border: 10px solid gray;
+            background: gray;
+            color: white;
+        }
+    }
+}

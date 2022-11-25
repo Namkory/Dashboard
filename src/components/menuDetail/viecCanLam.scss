@@ -1,0 +1,175 @@
+.vcl-wrapper {
+    margin: 0 20px;
+    p {
+        margin: 0;
+    }
+
+    .vcl-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+
+        .vcl-header-mentor {
+            p {
+                color: #4aa9e9;
+            }
+        }
+
+        button {
+            min-width: 110px;
+            border-radius: 2em;
+            padding: 6px 38px;
+            font-size: 16px;
+            background-color: #5b69bc;
+            border: 1px solid #5b69bc;
+            font-weight: 500;
+            color: #fff;
+        }
+    }
+
+    .vcl-list {
+        background-color: #f5f7f8;
+        border-radius: 5px;
+        padding: 5px;
+        table {
+            width: 100%;
+            padding: 5px;
+            border-collapse: collapse;
+            border-spacing: 0;
+
+            tr {
+                height: 40px;
+                padding: 5px;
+                display: table-row;
+                vertical-align: inherit;
+                border-color: inherit;
+                border-bottom: solid 1px #ddd;
+
+                .father {
+                    position: relative;
+                }
+
+                td {
+                    padding: 5px;
+                    .btn {
+                        min-width: 110px;
+                        border-radius: 2em;
+                        padding: 6px 38px;
+                        font-size: 16px;
+                        background-color: #23b9a9;
+                        border: 1px solid #23b9a9;
+                        font-weight: 500;
+                        color: #fff;
+                        padding: 6px 20px;
+
+                        span {
+                            padding-right: 5px;
+                        }
+                    }
+
+                    .status-start {
+                        background-color: rgb(229 229 58 / 79%);
+                        border: 1px solid rgb(229 229 58 / 79%);
+                    }
+                    .status-finish {
+                        background-color: skyblue;
+                        border: 1px solid skyblue;
+                    }
+                    .status-cancel {
+                        background-color: red;
+                        border: 1px solid red;
+                    }
+
+                    .drop-down {
+                        position: absolute;
+                        top: 100%;
+                        margin: 0;
+                        padding: 0;
+
+                        width: 120px;
+                        background-color: #fff;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                        z-index: 10;
+
+                        .drop-down-item {
+                            cursor: pointer;
+                            list-style: none;
+                            padding: 3px 15px;
+                            clear: both;
+                            font-weight: 400;
+                            line-height: 1.42857143;
+                            color: #333;
+                            white-space: nowrap;
+
+                            &:hover {
+                                background-color: #ebeff2;
+                            }
+                        }
+                    }
+                }
+
+                th {
+                    padding: 5px;
+                    display: table-cell;
+                    vertical-align: inherit;
+                    font-weight: bold;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.modal-header {
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+
+    button {
+        color: #ccc;
+        border: none;
+        background-color: transparent;
+        &:hover {
+            color: gray;
+        }
+    }
+}
+
+.modal-body {
+    .form-group {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            margin: 0 20px 0 0;
+
+            font-weight: bold;
+        }
+
+        .input {
+            width: 300px;
+
+            .input-group-addon {
+                padding: 6px 12px;
+                font-size: 14px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #555;
+
+                background-color: #eee;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.modal-footer {
+    .btn-cancel {
+        border: 1px solid gray;
+        margin-left: 10px;
+    }
+}
